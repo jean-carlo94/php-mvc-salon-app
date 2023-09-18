@@ -1,6 +1,17 @@
 <?php
 
-$db = mysqli_connect('localhost', 'root', '', '');
+if(!getenv('DB_HOST')){
+    echo "Error: No se pudo obtener las variables de entorno .";
+};
+
+debuguear($_ENV);
+
+$db = mysqli_connect(
+        $_ENV['HOST_DB'],
+        $_ENV['USER_DB'], 
+        $_ENV['PASS_DB'], 
+        $_ENV['NAME_DB']
+    );
 
 
 if (!$db) {

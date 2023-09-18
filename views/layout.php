@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-
-    <?php echo $contenido; ?>
-            
+    <div class="contenedor-app">
+        <div class="image"></div>
+        <div class="app">
+            <?php echo $contenido; ?>
+        </div>
+    </div>
 </body>
 </html>

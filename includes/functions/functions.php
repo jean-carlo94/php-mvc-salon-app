@@ -1,13 +1,13 @@
 <?php
 
-function debuguear($variable) : string {
+function debug($variable) : string {
     echo "<pre>";
     var_dump($variable);
     echo "</pre>";
     exit;
 }
 
-// Escapa / Sanitizar el HTML
+// Escapa / Sanitizer el HTML
 function s($html) : string {
     $s = htmlspecialchars($html);
     return $s;

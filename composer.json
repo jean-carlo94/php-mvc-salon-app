@@ -2,13 +2,6 @@
     "name": "anarkodev/php-mvc-appsalon",
     "description": "Proyecto PHP 8 MVC, SQL, SASS, GULP",
     "type": "project",
-    "autoload": {
-        "psr-4": {
-            "MVC\\" : "./",
-            "Controllers\\" : "./controllers",
-            "Model\\" : "./models"
-        }
-    },
     "authors": [
         {
             "name": "Jean Carlo Urrego",
@@ -17,5 +10,12 @@
     ],
     "require": {
         "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "MVC\\":"./",
+            "Model\\":"./models",
+            "Controllers\\":"./controllers"
+        }
     }
 }
